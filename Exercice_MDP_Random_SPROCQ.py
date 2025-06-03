@@ -1,3 +1,4 @@
+#Génération de mot de passe de manière aléatoire respectant les critères de la CNIL
 import random
 
 def generer_mdp_valide():
