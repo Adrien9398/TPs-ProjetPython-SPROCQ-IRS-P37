@@ -1,3 +1,4 @@
+#Utilisation du regex pour determiner si une IP appartenant à unne liste contenu dans un fichier texte est valide
 import re
 
 def test_ip(ip):
