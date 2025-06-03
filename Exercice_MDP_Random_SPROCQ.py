@@ -8,7 +8,7 @@ def generer_mdp_valide():
     liste_caracteres = liste_maj + liste_min + liste_num + liste_spe
 
     while True:
-        longueur = random.randint(12, 14)  # longueur du mot de passe entre 12 et 24
+        longueur = random.randint(12, 14)
         mdp = [
             random.choice(liste_maj),
             random.choice(liste_min),
@@ -27,6 +27,5 @@ def generer_mdp_valide():
             print("Mot de passe généré automatiquement :", mdp_sec)
             print("Mot de passe valide selon les règles de la CNIL.")
             break
-
-# Appel de la fonction
+            
 generer_mdp_valide()
