@@ -1,3 +1,4 @@
+#Utilisation du Regex pour déterminer si une IP entré par un utilisateur est valide
 import re
 
 def test_ip(ip):
