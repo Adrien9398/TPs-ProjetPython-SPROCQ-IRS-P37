@@ -1,16 +1,14 @@
+#Test de mots de passe entré manuellement par l'utilisateur 
 def mdp_valide(mdp):
-    # Definition manuelle des categories de caracteres
     liste_maj = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     liste_min = "abcdefghijklmnopqrstuvwxyz" 
     liste_num = "0123456789"
     liste_spe = "!@#$%^&*()-_=+[]<>.?;:"
 
-    # Verification longueur du mot de passe
     if len(mdp) < 12:
         print("Le mot de passe doit contenir minimum 12 caracteres")
         return False
 
-    # Verifie la présence des types de caracteres (Majuscule, Minuscule, Numerique et Special)
     verif_maj = any(c in liste_maj for c in mdp)
     verif_min = any(c in liste_min for c in mdp)
     verif_num = any(c in liste_num for c in mdp)
@@ -23,7 +21,6 @@ def mdp_valide(mdp):
     print("Mot de passe valide selon les regles de la CNIL")
     return True
 
-# utilisation de la fonction par l'utilisateur
 while True:
     utilisateur_mdp = input("Entrez votre mot de passe : ")
     if mdp_valide(utilisateur_mdp):
