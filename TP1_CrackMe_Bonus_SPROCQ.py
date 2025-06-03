@@ -1,3 +1,4 @@
+#Jeu pour trouver les mots de passe défini dans un fichier texte, dans le cas ou le fichier n'est pas trouvé il utilise une liste prédéfinie
 import random
 
 
